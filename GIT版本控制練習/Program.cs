@@ -12,6 +12,12 @@ namespace GIT版本控制練習
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
+            Console.WriteLine("SayHello");
             Console.ReadKey();
         }
     }
