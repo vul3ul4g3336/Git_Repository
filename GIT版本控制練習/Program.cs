@@ -10,15 +10,7 @@ namespace GIT版本控制練習
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.WriteLine("SayHello");
-            Console.ReadKey();
+            Console.WriteLine("Test 1 Begin");
         }
     }
 }
