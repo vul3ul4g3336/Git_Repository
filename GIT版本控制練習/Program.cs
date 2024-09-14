@@ -17,6 +17,9 @@ namespace GIT版本控制練習
             Console.WriteLine("請輸入密碼：");
             String password = Console.ReadLine();
 
+            Login login = new Login();
+
+
             RegistModel registModel = new RegistModel(account, password);
             RegisterService service = new RegisterService();
             bool isSuccess =  service.UserRegist(registModel);
