@@ -12,25 +12,26 @@ namespace GIT版本控制練習
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("請輸入帳號：");
-            String account = Console.ReadLine();
-            Console.WriteLine("請輸入密碼：");
-            String password = Console.ReadLine();
+            Console.WriteLine("請輸入使用者姓名：");
+            String UserName = Console.ReadLine();
+            Console.WriteLine("請輸入使用者帳號：");
+            String Account = Console.ReadLine();
+            Console.WriteLine("請輸入使用者密碼：");
+            String Password = Console.ReadLine();
+            Console.WriteLine("請輸入使用者地址：");
+            String Address = Console.ReadLine();
 
-            Login login = new Login();
-
-
-            RegistModel registModel = new RegistModel(account, password);
+            RegistModel user = new RegistModel(UserName, Account, Password, Address);
             RegisterService service = new RegisterService();
-            bool isSuccess =  service.UserRegist(registModel);
-            if (isSuccess)
-            {
-                Console.WriteLine("註冊成功");
-            }
+
+            if (service.UserRegist(user))
+                Console.WriteLine("登入成功");
             else
             {
-                Console.WriteLine("註冊失敗");
+                Console.WriteLine("登入失敗");
             }
+            Login login = new Login();
+
             login.LoginInto();
         }
     }
