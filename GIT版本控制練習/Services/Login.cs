@@ -7,18 +7,26 @@ using System.Threading.Tasks;
 
 namespace GIT版本控制練習.Services
 {
-    internal class Login
+    public class Login
     {
-        Dictionary<string,string> AccountNum= new Dictionary<string,string>();
-        public Login() 
+        public Dictionary<string, string> AccountNum = new Dictionary<string, string>();
+
+        public void LoginInto()
         {
             Console.Write("請輸入帳號: ");
-            string account=Console.ReadLine();
+            string account = Console.ReadLine();
             Console.Write("請輸入密碼: ");
-            IsPasswordCorrect(Console.ReadLine(),account);
+            bool LoginSuccess = IsPasswordCorrect(Console.ReadLine(), account);
+            if (LoginSuccess)
+            {
+                Console.WriteLine("成功登入!");
 
+            }
+            else
+                Console.WriteLine("登入失敗");
+            return;
         }
-        private bool IsPasswordCorrect(string password,string account)
+        private bool IsPasswordCorrect(string password, string account)
         {
             if (password == AccountNum[account])
             {

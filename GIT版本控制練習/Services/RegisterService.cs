@@ -10,6 +10,8 @@ namespace GIT版本控制練習.Services
             userModel.Account = model.Account;
             userModel.Password = model.Password;
 
+            Login login = new Login();
+            login.AccountNum.Add(model.Account, model.Password);
 
             return true;
         }

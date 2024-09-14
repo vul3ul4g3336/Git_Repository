@@ -31,7 +31,7 @@ namespace GIT版本控制練習
             {
                 Console.WriteLine("註冊失敗");
             }
-
+            login.LoginInto();
         }
     }
 }
