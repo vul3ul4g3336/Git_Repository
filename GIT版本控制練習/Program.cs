@@ -12,6 +12,7 @@ namespace GIT版本控制練習
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("XXXXXX登入系統");
             Console.WriteLine("請輸入使用者姓名：");
             String UserName = Console.ReadLine();
             Console.WriteLine("請輸入使用者帳號：");
@@ -20,7 +21,18 @@ namespace GIT版本控制練習
             String Password = Console.ReadLine();
             Console.WriteLine("請輸入使用者地址：");
             String Address = Console.ReadLine();
-
+            Console.WriteLine("AAAAAAAA");
+            Console.WriteLine("BBBBBBBB");
+            Console.WriteLine("CCCCCCCC");
+            Console.WriteLine("AAAAAAAA");
+            Console.WriteLine("BBBBBBBB");
+            Console.WriteLine("CCCCCCCC");
+            Console.WriteLine("AAAAAAAA");
+            Console.WriteLine("BBBBBBBB");
+            Console.WriteLine("CCCCCCCC");
+            Console.WriteLine("AAAAAAAA");
+            Console.WriteLine("BBBBBBBB");
+            Console.WriteLine("CCCCCCCC");
             RegistModel user = new RegistModel(UserName, Account, Password, Address);
             RegisterService service = new RegisterService();
 
