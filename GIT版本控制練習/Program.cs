@@ -33,7 +33,7 @@ namespace GIT版本控制練習
             Console.WriteLine("AAAAAAAA");
             Console.WriteLine("BBBBBBBB");
             Console.WriteLine("CCCCCCCC");
-            RegistModel user = new RegistModel(UserName, Account, Password, Address);
+            
             Console.WriteLine("歡迎使用 [XXX 註冊系統]！");
             Console.WriteLine("請依照指示完成註冊，讓我們開始吧！");
 
